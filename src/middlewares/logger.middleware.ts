@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Request, Response, NextFunction } from 'express';
 import Logger from '../lib/logger';
 

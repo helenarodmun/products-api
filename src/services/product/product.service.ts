@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { v4 as uuidv4 } from 'uuid';
 import { Product } from '../../models/product';
 import { GeneralException } from '../../exceptions/generalException';

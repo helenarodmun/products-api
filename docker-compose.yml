@@ -1,0 +1,30 @@
+version: "3.5"
+services:
+    postgres: 
+      image: "postgres:latest"
+      hostname: "warehouse-db"
+      ports: 
+       - "7541:5432"
+      environment:
+        POSTGRES_PASSWORD: Hekia*2020
+        POSTGRES_USER: helenarodmun@gmail.com
+        POSTGRES_DB: WAREHOUSE_DB
+      networks:
+        - interdb
+    pgAdmin: 
+      image: "dpage/pgadmin4:latest"
+      ports:
+        - "7542:80"
+      environment:
+        PGADMIN_DEFAULT_EMAIL: helenarodmun@gmail.com
+        PGADMIN_DEFAULT_PASSWORD: Hekia*2020
+        PGADMIN_SERVER_JSON_FILE: /pgadmin/conf/server.json
+      networks:
+        - interdb
+      volumes: 
+        - ./.docker/pgadmin/:/pgadmin4/conf
+
+networks: 
+  interdb:
+    name: warehouse_interdb
+    driver: bridge

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { ProductController } from '../controllers/product/product.controller';
 import * as express from 'express';
 import { LoggerMiddleware } from '../middlewares/logger.middleware';

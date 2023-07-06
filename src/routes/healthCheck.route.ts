@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { HealthCheckController } from '../controllers/healthCheck/healthCheck.controller';
 import * as express from 'express';
 import { LoggerMiddleware } from '../middlewares/logger.middleware';

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import express from 'express';
 import { HealthCheckRoute } from './routes/healthCheck.route';
 import { ProductRoute } from './routes/product.route';

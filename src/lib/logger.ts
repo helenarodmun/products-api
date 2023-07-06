@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import winston from 'winston';
 
 const levels = {

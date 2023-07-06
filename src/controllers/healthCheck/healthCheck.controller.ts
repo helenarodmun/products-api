@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Request, Response } from 'express';
 import { HealthCheckService } from '../../services/healthCheck/healthCheck.service';
 

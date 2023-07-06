@@ -1,0 +1,13 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "warehouse-db-server",
+            "Group": "Servers",
+            "Port": 5432,
+            "Username": "helenarodmun@gmail.com",
+            "Host": "warehouse-db",
+            "SSLMode": "prefer",
+            "MaintenanceDB": "WAREHOUSE_DB"
+        }
+    }
+}
